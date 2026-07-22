@@ -10,7 +10,7 @@ The goal is to simulate the responsibilities of an Infrastructure Engineer by de
 
 ## Business Scenario
 
-Northwind Technologies is a growing technology consulting company with approximately 50 employees.
+Vig Technologies is a growing technology consulting company with approximately 50 employees.
 
 The company currently has no centralized authentication, user management, or network services. As the Infrastructure Engineer, I have been tasked with designing and deploying a secure and scalable Active Directory environment to support company operations.
 
