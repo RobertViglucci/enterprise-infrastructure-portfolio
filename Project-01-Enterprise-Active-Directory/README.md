@@ -1,48 +1,32 @@
-# Project 1 - Enterprise Active Directory Environment
+# Project 1 – Enterprise Active Directory Environment
 
-## Project Overview
+## Executive Summary
 
-This project simulates the deployment of a Windows-based enterprise environment for a fictional company named Northwind Technologies.
+This project documents the design and deployment of a Windows-based Active Directory environment for a fictional company named Northwind Technologies.
 
-The objective is to build a production-style Active Directory infrastructure using Windows Server, Windows 11, and Linux virtual machines while documenting each stage of the deployment process.
+The goal is to simulate the responsibilities of an Infrastructure Engineer by designing, implementing, documenting, and maintaining an enterprise Windows environment using industry-standard technologies.
 
 ---
 
 ## Business Scenario
 
-Vig Technologies is a growing organization with approximately 50 employees spread across four departments:
+Northwind Technologies is a growing technology consulting company with approximately 50 employees.
 
-- Information Technology
-- Human Resources
-- Finance
-- Sales
-
-As the Infrastructure Engineer, I am responsible for designing, deploying, and maintaining the company's core IT infrastructure.
+The company currently has no centralized authentication, user management, or network services. As the Infrastructure Engineer, I have been tasked with designing and deploying a secure and scalable Active Directory environment to support company operations.
 
 ---
 
-## Objectives
+## Project Objectives
 
 - Deploy Windows Server
-- Configure Active Directory
+- Configure Active Directory Domain Services
 - Configure DNS
 - Configure DHCP
-- Join Windows clients to the domain
-- Implement Group Policy
-- Configure shared folders
-- Document the deployment
-
----
-
-## Planned Environment
-
-### Virtual Machines
-
-| VM | Purpose |
-|----|----------|
-| Windows Server | Domain Controller |
-| Windows 11 | Client Workstation |
-| Ubuntu Server | Linux Server |
+- Join client computers to the domain
+- Configure Organizational Units
+- Configure Group Policy
+- Deploy shared folders
+- Document the complete deployment
 
 ---
 
@@ -54,7 +38,8 @@ As the Infrastructure Engineer, I am responsible for designing, deploying, and m
 - DHCP
 - Group Policy
 - PowerShell
-- VMware
+- VMware Workstation
+- Windows 11
 - Ubuntu Server
 
 ---
@@ -65,9 +50,17 @@ As the Infrastructure Engineer, I am responsible for designing, deploying, and m
 
 ---
 
-## Next Steps
+## Project Roadmap
 
-- Install VMware
-- Create Windows Server VM
-- Configure static IP
-- Install Active Directory
+- [ ] Design enterprise architecture
+- [ ] Deploy Windows Server
+- [ ] Configure networking
+- [ ] Install Active Directory
+- [ ] Configure DNS
+- [ ] Configure DHCP
+- [ ] Join Windows client
+- [ ] Create users and groups
+- [ ] Configure Group Policy
+- [ ] Configure file shares
+- [ ] Validate environment
+- [ ] Document lessons learned
