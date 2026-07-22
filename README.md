@@ -1,16 +1,7 @@
-# enterprise-infrastructure-portfolio
+# Enterprise IT Portfolio
 
-My Objective
+Welcome to my Enterprise IT Portfolio.
 
-This repository documents my journey toward becoming an Infrastructure Engineer specializing in Microsoft enterprise technologies, Linux administration, networking, and automation.
+This repository documents the design, implementation, and administration of enterprise IT environments built as part of my professional development toward a career in Infrastructure Engineering.
 
-My goal is to build production-style labs that simulate real enterprise environments while documenting the planning, implementation, troubleshooting, and lessons learned from each project.
-
-My Current Focus
-
-- Windows Server
-- Active Directory
-- PowerShell
-- Linux Administration
-- Enterprise Networking
-- Microsoft Entra ID
+The projects in this portfolio focus on Microsoft enterprise technologies, Linux administration, networking, identity management, virtualization, automation, and security. Each project is documented with architecture diagrams, implementation steps, troubleshooting notes, and lessons learned to reflect real-world systems administration practices.
