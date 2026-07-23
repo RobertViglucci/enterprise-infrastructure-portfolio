@@ -9,7 +9,7 @@ The goal is to simulate the responsibilities of an Infrastructure Engineer by de
 ---
 #Architecture
 
-![Architecture](Architecture/Network-Design.md)
+![Architecture](Architecture/EnterpriseEnvironment.drawio.svg)
 
 ---
 
