@@ -7,6 +7,11 @@ This project documents the design and deployment of a Windows-based Active Direc
 The goal is to simulate the responsibilities of an Infrastructure Engineer by designing, implementing, documenting, and maintaining an enterprise Windows environment using industry-standard technologies.
 
 ---
+#Architecture
+
+![Architecture](Architecture/Network-Design.md)
+
+---
 
 ## Business Scenario
 
@@ -52,15 +57,37 @@ The company currently has no centralized authentication, user management, or net
 
 ## Project Roadmap
 
-- [ ] Design enterprise architecture
-- [ ] Deploy Windows Server
-- [ ] Configure networking
-- [ ] Install Active Directory
-- [ ] Configure DNS
-- [ ] Configure DHCP
-- [ ] Join Windows client
-- [ ] Create users and groups
-- [ ] Configure Group Policy
-- [ ] Configure file shares
-- [ ] Validate environment
-- [ ] Document lessons learned
+### Phase 1 – Planning
+- Design enterprise architecture
+- Create network documentation
+- Define IP addressing scheme
+
+### Phase 2 – Windows Server Deployment
+- Install Windows Server 2025
+- Configure static IP
+- Rename server to DC01
+
+### Phase 3 – Active Directory
+- Install AD DS
+- Promote to Domain Controller
+- Verify domain health
+
+### Phase 4 – DNS & DHCP
+- Configure DNS
+- Configure DHCP scope
+- Test client addressing
+
+### Phase 5 – Client Deployment
+- Install Windows 11
+- Join to domain
+- Test authentication
+
+### Phase 6 – Group Policy
+- Create OUs
+- Create users/groups
+- Apply Group Policies
+
+### Phase 7 – Ubuntu Integration
+- Deploy Ubuntu Server
+- Configure SSH
+- Prepare Docker environment
