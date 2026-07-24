@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This project documents the design and deployment of a Windows-based Active Directory environment for a fictional company named Northwind Technologies.
+This project documents the design and deployment of a Windows-based Active Directory environment for a fictional company named Vig Technologies.
 
 The goal is to simulate the responsibilities of an Infrastructure Engineer by designing, implementing, documenting, and maintaining an enterprise Windows environment using industry-standard technologies.
 
