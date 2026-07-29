@@ -52,24 +52,25 @@ The operating system was installed on the 80 GB virtual disk using the default p
 
 ---
 
-### Step 4 - Installation Progress
+### Step 4 - First Login
 
-*(We'll add this after installation finishes if we decide it's useful.)*
+![First Login](images/installation/04-first-login.png)
 
----
+**Explanation**
 
-### Step 5 - First Login
-
-*(We'll add this after installation completes.)*
+After the installation completed, the server was accessed using the local **Administrator** account. Windows Server successfully loaded the desktop and automatically launched **Server Manager**, confirming that the operating system had been installed correctly and was ready for post-installation configuration.
 
 ---
 
 ## Validation
 
-- Windows Server installed successfully.
-- Server boots normally.
-- Server Manager launches without errors.
+The installation was considered successful after verifying the following:
 
+- The operating system booted successfully.
+- Login using the local Administrator account was successful.
+- Server Manager launched automatically.
+- No installation errors were present.
+  
 ---
 
 ## Enterprise Importance
