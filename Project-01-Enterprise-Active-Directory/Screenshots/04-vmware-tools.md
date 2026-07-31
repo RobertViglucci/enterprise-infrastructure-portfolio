@@ -1,6 +1,6 @@
 ### VMware Tools Installation Complete
 
-![VMware Tools Installation Complete](images/installation/07-vmware-tools-installation-complete.png)
+![VMware Tools Installation Complete](images/installation/07-vmware-tools-installed.png)
 
 **Explanation**
 
