@@ -83,7 +83,7 @@ Validation confirmed:
 
 ### Department Users
 
-![Department Users](images/active-directory/04-department-users.png)
+![Department Users](images/active-directory/04-first-domain-user.png)
 
 ---
 
