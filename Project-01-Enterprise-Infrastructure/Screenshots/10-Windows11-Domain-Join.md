@@ -1,36 +1,109 @@
 # Windows 11 Domain Join
 
 ## Objective
-Deploy a Windows 11 Enterprise workstation and join it to the `vigtech.local` Active Directory domain.
 
-## Steps Performed
+Deploy a Windows 11 Enterprise virtual machine, configure network settings, and successfully join the workstation to the **vigtech.local** Active Directory domain. This workstation will serve as the primary domain-joined client for validating Active Directory services, authentication, and future Group Policy deployments.
 
-1. Installed Windows 11 Enterprise in VMware.
-2. Renamed the workstation to `WIN11-01`.
-3. Configured a static IPv4 address:
-   - IP Address: 192.168.10.20
-   - Subnet Mask: 255.255.255.0
-   - DNS Server: 192.168.10.10
-4. Verified connectivity to the domain controller using `ping`.
-5. Verified DNS name resolution with `nslookup vigtech.local`.
-6. Joined the workstation to the `vigtech.local` Active Directory domain.
-7. Restarted the workstation.
-8. Logged in successfully using a domain user account.
+---
+
+## Business Justification
+
+Joining workstations to an Active Directory domain enables centralized authentication, security policy enforcement, software deployment, and resource management. Rather than managing each workstation individually, administrators can manage users and computers from a central Domain Controller, improving security, scalability, and operational efficiency.
+
+---
+
+## Environment
+
+| Component | Value |
+|-----------|-------|
+| Operating System | Windows 11 Enterprise |
+| Computer Name | WIN11-01 |
+| Domain | vigtech.local |
+| Domain Controller | DC01 |
+| Domain Controller IP | 192.168.10.10 |
+| Workstation IP | 192.168.10.20 |
+| Hypervisor | VMware Workstation Pro |
+
+---
+
+## Configuration Summary
+
+The following tasks were completed:
+
+1. Installed Windows 11 Enterprise in VMware Workstation Pro.
+2. Renamed the workstation to **WIN11-01**.
+3. Configured a static IPv4 address.
+4. Configured the workstation to use **DC01 (192.168.10.10)** as its preferred DNS server.
+5. Verified connectivity to the Domain Controller using **ping**.
+6. Verified DNS name resolution using **nslookup**.
+7. Joined the workstation to the **vigtech.local** Active Directory domain.
+8. Restarted the workstation.
+9. Successfully authenticated using a domain user account.
+
+---
+
+## Network Configuration
+
+| Setting | Value |
+|---------|-------|
+| IP Address | 192.168.10.20 |
+| Subnet Mask | 255.255.255.0 |
+| Default Gateway | None (Host-Only Network) |
+| Preferred DNS | 192.168.10.10 |
+
+---
 
 ## Validation
 
-- Successful ICMP communication with DC01.
-- Successful DNS resolution for `vigtech.local`.
-- Domain join completed successfully.
-- Domain user profile created successfully.
+The deployment was validated by confirming:
+
+- Successful communication with DC01.
+- Successful DNS resolution for **vigtech.local**.
+- Successful Active Directory domain join.
+- Successful login using the **rviglucci** domain account.
+- Automatic creation of a domain user profile.
+
+---
 
 ## Screenshots
 
-- 01-computer-rename.png
-- 02-static-ip-configuration.png
-- 03-domain-join-success.png
-- 04-domain-user-login.png
+### Rename Computer
+
+![Rename Computer](images/windows11/01-computer-rename.png)
+
+---
+
+### Static IP Configuration
+
+![Static IP Configuration](images/windows11/02-static-ip-configuration.png)
+
+---
+
+### Domain Join Successful
+
+![Domain Join Successful](images/windows11/03-domain-join-success.png)
+
+---
+
+### Domain User Login
+
+![Domain User Login](images/windows11/04-domain-user-login.png)
+
+---
 
 ## Lessons Learned
 
-A Windows client requires correct DNS configuration pointing to the domain controller before it can locate and join an Active Directory domain. Static IP addressing and DNS validation simplified troubleshooting during deployment.
+A successful Active Directory domain join depends on proper network configuration, particularly DNS. The workstation must use the Domain Controller as its preferred DNS server in order to locate Active Directory services. Once joined to the domain, centralized authentication allows users to log in using domain credentials, laying the foundation for future Group Policy management and enterprise administration.
+
+---
+
+## Next Steps
+
+The Windows 11 workstation will be used to validate additional enterprise services, including:
+
+- DNS Management
+- DHCP Configuration
+- Group Policy deployment
+- Security policy enforcement
+- PowerShell administration
+- Enterprise validation and testing
